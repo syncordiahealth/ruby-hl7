@@ -1,5 +1,7 @@
 # encoding: UTF-8
 class HL7::Message::Segment::FT1 < HL7::Message::Segment
+  weight 4
+
   add_field :set_id
   add_field :transaction_id
   add_field :transaction_batch_id
