@@ -10,9 +10,6 @@ describe HL7::Message::Segment::GT1 do
       let(:gt1) { described_class.new payload }
 
       specify { expect { gt1 }.to_not raise_error }
-
-      specify { expect(gt1.set_id).to eq '1' }
-      specify { expect(gt1.guarantor_number).to eq '2857217' }
       specify { expect(gt1.guarantor_name).to eq 'TEST^FIRST' }
     end
   end
